@@ -81,8 +81,8 @@ export default function App() {
       </div>
       {selectedFriend &&
         <FromSplitBill
-          key={selectedFriend + Math.random() * 1000}
-          selectedFriend={selectedFriend.id}
+          key={selectedFriend.id}
+          selectedFriend={selectedFriend}
           onSplitBill={handleUpdateFriend} />
       }
     </div>
